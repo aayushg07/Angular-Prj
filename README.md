@@ -1,59 +1,43 @@
-# AngularProject
+# Angular 18 Project with Tailwind CSS
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.3.
+This project demonstrates a client-side web application built with Angular 18 that includes:
+- Client-side navigation
+- API consumption using Angular services
+- Reactive forms
+- Deployment to GitHub Pages
 
-## Development server
+## Features
 
-To start a local development server, run:
+- **Navigation**: Three-page navigation (Home, API Data, Form)
+- **API Data**: Fetches and displays data from JSONPlaceholder API
+- **Form**: Reactive form with validation
+- **Responsive Design**: Built with Tailwind CSS
 
-```bash
-ng serve
-```
+## Technologies Used
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Angular 18
+- TypeScript
+- Tailwind CSS
+- Angular Reactive Forms
+- Angular HttpClient
 
-## Code scaffolding
+## Installation
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/YOUR-USERNAME/YOUR-REPO.git
 
-```bash
-ng generate component component-name
-```
+2. Install Dependencies:
+   ```bash
+   npm install
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+3. Run the development server:
+   ```bash
+   ng serve
 
-```bash
-ng generate --help
-```
+## Deployment
 
-## Building
+   The project is deployed to GitHub Pages. To redeploy:
+   ```bash
+   npm run deploy
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
