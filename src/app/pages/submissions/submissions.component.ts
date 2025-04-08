@@ -43,9 +43,11 @@ export class SubmissionsComponent {
   submissions: any[] = [];
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {
-    this.loadSubmissions();
+    // Delay loading until after render
+    if (isPlatformBrowser(this.platformId)) {
+      this.loadSubmissions();
+    }
   }
-
   private loadSubmissions(): void {
     const storedData = localStorage.getItem('formSubmissions');
     this.submissions = storedData ? JSON.parse(storedData) : [];
